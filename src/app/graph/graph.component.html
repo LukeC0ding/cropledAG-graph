@@ -1,0 +1,12 @@
+<div id="colorOverview" *ngIf="chart">
+	<div class="colorField" *ngFor="let color of getColors()" [style.background-color]="color.backgroundColor">{{color.label}}</div>
+</div>
+<div class="flexbox-panel">
+	<div class="chart-container flexbox-item">
+		<canvas  id="MyChart" #canvas>{{ chart }}</canvas>
+	</div>
+	<div class="flexbox-item" >
+		<input type="range" orient="vertical" step="5" min="0" max="100" [(ngModel)]="intesity"/>
+		<p>{{intesity}}%</p>
+	</div>
+</div>
