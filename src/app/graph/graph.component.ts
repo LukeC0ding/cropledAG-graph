@@ -5,11 +5,6 @@ Chart.register(LineController, CategoryScale, LinearScale, PointElement, LineEle
 
 import {formatNumber} from "@angular/common";
 
-interface Waypoint {
-  color: string;
-  intensity: number;
-}
-
 @Component({
   selector: 'app-graph',
   templateUrl: './graph.component.html',
