@@ -102,5 +102,8 @@
       }
     }
   },
-  "defaultProject": "lightGraph"
+  "defaultProject": "lightGraph",
+  "cli": {
+    "analytics": false
+  }
 }
